@@ -28,12 +28,11 @@ static int mydevice_release(struct inode *inode, struct file *file)
 ssize_t mydevice_read(struct file *file, char __user *user_buffer,
                       size_t count, loff_t *offset)
 {
-    uint8_t *data = msg;
     size_t datalen = strlen(msg);
 
     if (*offset >= datalen) return 0;
     if (count > datalen - *offset) count = datalen - *offset;
-    if (copy_to_user(user_buffer, data, count)) return -EFAULT;
+    if (copy_to_user(user_buffer, msg, count)) return -EFAULT;
 
     *offset += count;
 
