@@ -1,1 +1,0 @@
-cmd_/home/walter/Documents/linux-kernel-hw2/modules.order := {   echo /home/walter/Documents/linux-kernel-hw2/mychrdev.ko; :; } | awk '!x[$$0]++' - > /home/walter/Documents/linux-kernel-hw2/modules.order

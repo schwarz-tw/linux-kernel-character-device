@@ -1,1 +1,0 @@
-cmd_/home/walter/Documents/linux-kernel-hw2/mychrdev.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/walter/Documents/linux-kernel-hw2/mychrdev.ko /home/walter/Documents/linux-kernel-hw2/mychrdev.o /home/walter/Documents/linux-kernel-hw2/mychrdev.mod.o;  true

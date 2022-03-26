@@ -1,1 +1,0 @@
-cmd_/home/walter/Documents/linux-kernel-hw2/Module.symvers := sed 's/\.ko$$/\.o/' /home/walter/Documents/linux-kernel-hw2/modules.order | scripts/mod/modpost -m -a  -o /home/walter/Documents/linux-kernel-hw2/Module.symvers -e -i Module.symvers   -T -
